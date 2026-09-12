@@ -21,10 +21,11 @@
 
 body {
     background-color: #f8fafc;
+    overflow-x: hidden;
 }
 
 section {
-    padding: 100px 200px;
+    padding: 100px clamp(20px, 8vw, 200px);
 }
 
 /* --- Header & Navigation --- */
@@ -39,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 200px;
+    padding: 15px clamp(20px, 8vw, 200px);
 }
 
 .logo {
@@ -96,6 +97,10 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.main > div {
+    max-width: 1000px;
 }
 
 .main h2 {
@@ -335,6 +340,7 @@ header {
     margin-top: 10px;
     color: var(--text-white);
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .project-desc {
@@ -379,6 +385,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .footer-title {
@@ -446,11 +453,11 @@ html[dir="rtl"] .footer {
     }
 
     .main h2 {
-        font-size: 1.2em;
+        font-size: clamp(1em, 2vw, 1.2em);
     }
 
     .main h3 {
-        font-size: 1.4em;
+        font-size: clamp(1.1em, 3vw, 1.4em);
     }
 
     .content {
@@ -471,16 +478,28 @@ html[dir="rtl"] .footer {
     }
 
     .main h2 span {
-        font-size: 1.8em;
+        font-size: clamp(1.45em, 8vw, 1.8em);
+    }
+
+    .main h2 span.highlight {
+        font-size: clamp(1.25em, 7vw, 1.6em);
     }
 
     .main h3 {
         font-size: 1.2em;
+        line-height: 1.5;
     }
 
     .hero-btns {
         flex-direction: column;
         align-items: stretch;
+        width: 100%;
+    }
+
+    .main-btn,
+    .secondary-btn {
+        text-align: center;
+        width: 100%;
     }
 
     .card, .project-card {
@@ -492,5 +511,23 @@ html[dir="rtl"] .footer {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
+
+    .skill-tag {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    html[dir="rtl"] .project-title {
+        align-items: flex-end;
+    }
+
+    .main {
+        background-attachment: scroll;
     }
 }
