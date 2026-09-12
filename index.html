@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafa Rezk | Full Stack Web Engineer</title>
+    <!-- FontAwesome 6.4.0 CDN for all social & web icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <a href="#" class="logo">Eng.Mostafa</a>
+        <nav class="navigation">
+            <a href="#services" class="lang" data-en="Services" data-ar="الخدمات">Services</a>
+            <a href="#skills" class="lang" data-en="Skills" data-ar="المهارات">Skills</a>
+            <a href="#projects" class="lang" data-en="Projects" data-ar="الأعمال">Projects</a>
+            <a href="#contact" class="lang" data-en="Contact" data-ar="تواصل معي">Contact</a>
+            <button id="lang-btn" class="lang-switcher">عربي</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="main">
+        <div>
+            <h2>
+                <span class="lang" data-en="Hello, I'm Mostafa Rezk" data-ar="مرحباً، أنا مصطفى رزق">Hello, I'm Mostafa Rezk</span> — 
+                <span class="lang" data-en="Full Stack Web Engineer" data-ar="مهندس تطوير ويب متكامل">Full Stack Web Engineer</span>.<br>
+                <span class="highlight lang" data-en="Content Creator" data-ar="وصانع محتوى تقني">Content Creator</span>
+            </h2>
+            <h3 class="lang" data-en="Full Stack Dev 💻 | 0-to-1 Web Creator ⚡" data-ar="مطور ويب متكامل 💻 | بناء تطبيقات الويب من الصفر ⚡">Full Stack Dev 💻 | 0-to-1 Web Creator ⚡</h3>
+            
+            <!-- Hero Action Buttons -->
+            <div class="hero-btns">
+                <a href="#projects" class="main-btn lang" data-en="View my work" data-ar="عرض الأعمال">View my work</a>
+                <a href="cv.pdf" download class="secondary-btn lang" data-en="Download CV 📄" data-ar="تحميل السيرة الذاتية 📄">Download CV 📄</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            
+                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/201149812027" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="cards" id="services">
+        <h2 class="title lang" data-en="Services" data-ar="الخدمات">Services</h2>
+        <div class="content">
+            
+            <!-- Service 1: Frontend -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="info">
+                    <h3 class="lang" data-en="Frontend Development" data-ar="تطوير الواجهات الأمامية">Frontend Development</h3>
+                    <p class="lang" 
+                       data-en="Building responsive, interactive, and high-performance user interfaces using modern web technologies." 
+                       data-ar="بناء واجهات مستخدم تفاعلية، متجاوبة مع كافة الشاشات، وسريعة الأداء باستخدام أحدث التقنيات.">
+                       Building responsive, interactive, and high-performance user interfaces using modern web technologies.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service 2: Backend -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="info">
+                    <h3 class="lang" data-en="Backend Development" data-ar="تطوير الأنظمة الخلفية">Backend Development</h3>
+                    <p class="lang" 
+                       data-en="Designing scalable server architectures, RESTful APIs, and secure database management." 
+                       data-ar="تصميم قواعد البيانات، بناء واجهات البرمجة (APIs)، وإدارة الخوادم بكفاءة وأمان عالٍ.">
+                       Designing scalable server architectures, RESTful APIs, and secure database management.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service 3: Full Stack Web Apps -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="info">
+                    <h3 class="lang" data-en="Full Stack Web Applications" data-ar="تطبيقات ويب متكاملة">Full Stack Web Applications</h3>
+                    <p class="lang" 
+                       data-en="End-to-end web development from initial architecture and DB design to deployment & cloud hosting." 
+                       data-ar="تطوير تطبيقات الويب بالكامل من الفكرة، تصميم قواعد البيانات، وحتى الاستضافة والنشر.">
+                       End-to-end web development from initial architecture and DB design to deployment & cloud hosting.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service 4: Content & Technical Curriculum -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3 class="lang" data-en="Tech Content & Curriculums" data-ar="صناعة المحتوى والمناهج التقنية">Tech Content & Curriculums</h3>
+                    <p class="lang" 
+                       data-en="Scriptwriting and developing comprehensive technical courses and educational web content." 
+                       data-ar="كتابة السكريبتات وإعداد المناهج والدورات التدريبية التقنية لتبسيط مفاهيم البرمجة.">
+                       Scriptwriting and developing comprehensive technical courses and educational web content.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tech Stack / Skills Section -->
+    <section class="tech-stack" id="skills">
+        <h2 class="title lang" data-en="Tech Stack & Skills" data-ar="التقنيات والمهارات">Tech Stack & Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+            <span class="skill-tag"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+            <span class="skill-tag"><i class="fab fa-react"></i> React / Next.js</span>
+            <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js / Express</span>
+            <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL / MongoDB</span>
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-tag"><i class="fas fa-cloud"></i> REST APIs & Cloud</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="title lang" data-en="Projects & Works" data-ar="المشاريع والأعمال">Projects & Works</h2>
+        <div class="content">
+            
+            <!-- Project 1: Full Stack - Hati Al-Moulouk BBQ Restaurant -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work1.jpg" alt="Hati Al-Moulouk Restaurant Web App" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category lang" data-en="Full Stack Web Application" data-ar="تطبيق ويب متكامل">Full Stack Web Application</p>
+                    <strong class="project-title">
+                        <span class="lang" data-en="Hati Al-Moulouk BBQ Restaurant" data-ar="مطعم حاتي الملوك للمأكولات المشوية">Hati Al-Moulouk BBQ Restaurant</span>
+                        <a href="#" class="more-details lang" data-en="View Demo" data-ar="معاينة">View Demo</a>
+                    </strong>
+                    <p class="project-desc lang" 
+                       data-en="Complete ordering platform with online menu, table reservation, and admin dashboard." 
+                       data-ar="منصة طلبات متكاملة تشمل منيو تفاعلي، حجز طاولات اونلاين، ولوحة تحكم لإدارة الطلبات.">
+                       Complete ordering platform with online menu, table reservation, and admin dashboard.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 2: Frontend App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work2.jpg" alt="Frontend UI/UX Project" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category lang" data-en="Frontend Web Application" data-ar="تطبيق واجهة أمامية">Frontend Web Application</p>
+                    <strong class="project-title">
+                        <span class="lang" data-en="Interactive Analytics Dashboard" data-ar="لوحة تحليلات وإحصائيات تفاعلية">Interactive Analytics Dashboard</span>
+                        <a href="#" class="more-details lang" data-en="View Demo" data-ar="معاينة">View Demo</a>
+                    </strong>
+                    <p class="project-desc lang" 
+                       data-en="Responsive UI with dark mode support, real-time data charts, and smooth animations." 
+                       data-ar="واجهة متجاوبة تدعم الوضع الليلي، رسوم بيانية فورية، وانتقالات سلسة.">
+                       Responsive UI with dark mode support, real-time data charts, and smooth animations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 3: Backend & RESTful API -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work3.jpg" alt="Backend and API Project" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category lang" data-en="Backend & RESTful API" data-ar="نظام خلفي و RESTful API">Backend & RESTful API</p>
+                    <strong class="project-title">
+                        <span class="lang" data-en="E-Commerce API & Auth System" data-ar="نظام خلفي للمتاجر الإلكترونية والتوثيق">E-Commerce API & Auth System</span>
+                        <a href="#" class="more-details lang" data-en="View Docs" data-ar="المستندات">View Docs</a>
+                    </strong>
+                    <p class="project-desc lang" 
+                       data-en="Secure REST API with JWT authentication, payment gateway integration, and role-based control." 
+                       data-ar="واجهة برمجة آمنة مع نظام توثيق JWT، ربط بوابات الدفع الإلكتروني، وصلاحيات المستخدمين.">
+                       Secure REST API with JWT authentication, payment gateway integration, and role-based control.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="cards contact" id="contact">
+        <h2 class="title lang" data-en="Let's Work Together" data-ar="دعنا نعمل معاً">Let's Work Together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3 class="lang" data-en="Phone" data-ar="الهاتف">Phone</h3>
+                    <p>+201149812027</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3 class="lang" data-en="Email" data-ar="البريد الإلكتروني">Email</h3>
+                    <p>mostafa.rezk@example.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Eng. Mostafa Rezk</span></p>
+        <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+    </footer>
+
+    <!-- JavaScript File for Language Toggle -->
+    <script src="script.js"></script>
+</body>
+</html>
